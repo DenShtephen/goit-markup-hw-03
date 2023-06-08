@@ -11,6 +11,13 @@
     --grey-color: #2E2F42;
     --white-color: #FFFFFF;
     --dairy-color: #FCFCFC;
+    /**
+      |============================
+      | Others
+      |============================
+    */
+    --indent: 24px;
+    --items: 3;
 }
 
 body {
@@ -21,12 +28,11 @@ body {
 }
 
 .container {
-    width: 1160px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 8px ridge red;
 }
 
 /**
@@ -62,10 +68,15 @@ img {
     height: auto;
 }
 
-.card-set-item {}
+.card-set {
+display: flex;
+flex-wrap: wrap;
+gap: var(--indent)
+}
 
-.card-set-
-
+.card-set-item{
+width: calc(100% - var(--indent) * var(--items) - 1)/ var(--items);
+}
 /**
   |============================
   | Header
@@ -73,7 +84,6 @@ img {
 */
 .header {
     background-color: var(--cornflower-color);
-    outline: 5px ridge rgba(170, 50, 220, .6);
 }
 .header-container {
     display: flex;
@@ -86,7 +96,7 @@ img {
        
 }
 
-.link{
+.link {
 text-decoration: none;
 display: block;
 }
@@ -154,7 +164,6 @@ align-items: center;
 */
 .section-hero {
     background-color: var(--navy-blue-color);
-    outline: 8px ridge rgba(170, 50, 220, .6);
     text-align: center;
 }
 
@@ -175,7 +184,13 @@ align-items: center;
 */
 .section {
     background-color: #fff;
-    outline: 8px ridge rgba(170, 50, 220, .6);
+    padding-top: 120px;
+}
+
+.section-container{
+display: flex;
+align-items: center;
+gap: 24px;
 }
 
 .section-title {
@@ -202,7 +217,7 @@ align-items: center;
 */
 .section-work {
     background-color: #fff;
-    outline: 8px ridge rgba(170, 50, 220, .6);
+    padding-bottom: 120px;
 }
 
 .section-work-title {
@@ -213,6 +228,7 @@ align-items: center;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 72px;
+   
 }
 
 .list-content {
@@ -225,8 +241,8 @@ align-items: center;
   |============================
 */
 .section-team {
-    background-color: var(--cloud-color);
-    outline: 8px ridge rgba(170, 50, 220, .6);
+background-color: var(--cloud-color);
+padding: 120px 0px 120px;
 }
 
 .section-team-title {
@@ -239,7 +255,12 @@ align-items: center;
     text-align: center;
     margin-bottom: 72px;
 }
-
+.card-team{
+padding-top: 32px;
+padding-left: 16px;
+padding-right: 16px;
+padding-bottom: 32px;
+}
 .section-team-subtitle {
     color: #2e2f42;
     font-weight: 500;
@@ -250,7 +271,8 @@ align-items: center;
 }
 
 .section-team-list {
-    background-color: #FFFFFF;
+ --items: 4;
+ background-color: #FFFFFF;
 }
 
 .section-team-text {
@@ -258,10 +280,7 @@ align-items: center;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    padding-top: 292px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 32px;
+
 }
 
 /**
@@ -271,9 +290,21 @@ align-items: center;
 */
 .footer {
     background-color: var(--navy-blue-color);
-    outline: 8px ridge rgba(170, 50, 220, .6);
 }
-
+.footer-container{
+display: flex;
+flex-direction: column;
+padding: 100px 0px 100px;
+}
+.footer-link {
+color: #4d5ae5;
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+text-transform: uppercase;
+letter-spacing: 0.03em;
+}
 .footer-logo {
     color: #F4F4FD;
     text-decoration: none;
@@ -282,13 +313,14 @@ align-items: center;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
-
 .footer-text {
     color: #F4F4FD;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 16px;
 }
 
 /**
@@ -298,9 +330,17 @@ align-items: center;
 */
 .section-portfolio {
     background-color: #fff;
-    outline: 8px ridge rgba(170, 50, 220, .6);
 }
-
+.btn-container{
+display: flex;
+justify-content: center;
+gap: 24px;
+padding: 96px 0px 72px;
+}
+.potrfolio-card{
+padding: 32px 0px 32px;
+border: 1px solid #E7E9FC;
+}
 .section-portfolio-title {
     color: var(--navy-blue-color);
     font-weight: 500;
@@ -308,7 +348,6 @@ align-items: center;
     line-height: 1.2;
     letter-spacing: 0.02em
 }
-
 .section-portfolio-text {
     color: #434455;
     font-weight: 400;
@@ -369,7 +408,7 @@ align-items: center;
     cursor: pointer;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    display: flex;
+    padding: 12px 24px 12px 24px;
 }
 
 .button-portfolio:hover,
@@ -384,7 +423,6 @@ align-items: center;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-
 /**
   |============================
   | Optional
