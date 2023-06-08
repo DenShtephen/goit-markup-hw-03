@@ -338,8 +338,9 @@ gap: 24px;
 padding: 96px 0px 72px;
 }
 .potrfolio-card{
-padding: 32px 0px 32px;
+padding: 32px 16px 64px;
 border: 1px solid #E7E9FC;
+text-align: left;
 }
 .section-portfolio-title {
     color: var(--navy-blue-color);
