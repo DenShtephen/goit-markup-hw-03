@@ -175,9 +175,10 @@ align-items: center;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     padding: 188px 0 188px;
+    max-width: 496px;
+    text-align: center;
 }
 
 /**
@@ -195,7 +196,9 @@ display: flex;
 align-items: center;
 gap: 24px;
 }
-
+.services {
+    width calc((100% - 3 * 24px) / 4)
+}
 .section-title {
     color: var(--navy-blue-color);
     font-weight: 500;
@@ -320,6 +323,7 @@ margin-bottom: 16px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
     
 }
 .footer-text {
@@ -397,6 +401,7 @@ border-top: none;
     min-width: 169px;
     height: 56px;
     border: none;
+    display: block;
 }
 
 .button-main:hover,
