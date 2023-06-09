@@ -212,7 +212,6 @@ gap: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 120px;
 }
 
 /**
@@ -234,10 +233,6 @@ gap: 24px;
     text-align: center;
     margin-bottom: 72px;
    
-}
-
-.list-content {
-    margin-bottom: 120px;
 }
 
 /**
@@ -328,6 +323,7 @@ margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.5;
     margin-top: 16px;
+    max-width: 264px;
 }
 
 /**
@@ -337,15 +333,13 @@ margin-bottom: 16px;
 */
 .section-portfolio {
     background-color: #fff;
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 96px 0px 72px;
 }
 .btn-container{
 display: flex;
 justify-content: center;
 gap: 24px;
 padding: 96px 0px 72px;
-margin-bottom: 72px
 }
 .card-set-portfolio{
 display: flex;
