@@ -83,7 +83,6 @@ width: calc(100% - var(--indent) * var(--items) - 1)/ var(--items);
   |============================
 */
 .header {
-    background-color: var(--cornflower-color);
     border-bottom: 1px solid #e7e9fc
 }
 .header-container {
@@ -176,9 +175,9 @@ align-items: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding: 188px 0 188px;
     max-width: 496px;
     text-align: center;
+    margin: 0 auto 48px;
 }
 
 /**
@@ -188,7 +187,7 @@ align-items: center;
 */
 .section {
     background-color: #fff;
-    padding: 120px 0 120px
+    padding: 120px 0 120px;
 }
 
 .section-container{
@@ -300,8 +299,6 @@ border-radius: 0px 0px 4px 4px
     padding: 100px 0 100px
 }
 .footer-container{
-display: flex;
-flex-direction: column;
 padding: 100px 0px 100px;
 }
 .footer-link {
@@ -354,7 +351,7 @@ margin-bottom: 72px
 display: flex;
 flex-wrap: wrap;
 row-gap: 48px;
-column-gap: 24xpx;
+column-gap: 24px;
 }
 .potrfolio-list{
 row-gap: 48px;
@@ -402,11 +399,11 @@ border-top: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
-    margin-bottom: 188px;
     min-width: 169px;
     height: 56px;
     border: none;
     display: block;
+    margin: 0 auto;
 }
 
 .button-main:hover,
