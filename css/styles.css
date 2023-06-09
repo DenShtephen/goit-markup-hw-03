@@ -293,9 +293,6 @@ border-radius: 0px 0px 4px 4px
     background-color: var(--navy-blue-color);
     padding: 100px 0 100px
 }
-.footer-container{
-padding: 100px 0px 100px;
-}
 .footer-link {
 color: #4d5ae5;
 font-family: "Raleway", sans-serif;
